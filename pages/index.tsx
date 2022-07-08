@@ -39,13 +39,13 @@ const Home: NextPage = () => {
       </div>
       <div className='space-x-20 mt-10'>
         <button
-          className='bg-yellow-200 p-4 text-5xl text-black rounded-full hover:bg-yellow-300 focus:bg-yellow-400 focus:scale-110'
+          className='bg-yellow-200 p-4 text-5xl text-black rounded-full hover:bg-yellow-300 hover:scale-110 hover:animate-bounce focus:bg-yellow-400 focus:scale-110'
           onClick={newDog}
         >
           🐶
         </button>
         <button
-          className='bg-red-300 p-4 text-5xl text-black rounded-full hover:bg-red-400 focus:bg-red-500 focus:scale-110'
+          className='bg-red-300 p-4 text-5xl text-black rounded-full hover:bg-red-400 hover:scale-110 hover:animate-bounce focus:bg-red-500 focus:scale-110'
           onClick={toggleLiked}
         >
           {data?.isLiked ? '❤️' : '🤍'}
