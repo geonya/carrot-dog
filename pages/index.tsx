@@ -22,8 +22,8 @@ const Home: NextPage = () => {
     setLoading(false);
   };
   return (
-    <div className='bg-black w-[100%] h-[100vh] flex flex-col items-center justify-center'>
-      <h1 className='text-white text-4xl mb-5 font-bold'>Geony's Dog House</h1>
+    <div className='bg-gray-800 w-[100%] h-[100vh] flex flex-col items-center justify-center'>
+      <h1 className='text-white text-4xl mb-9 font-bold'>Woof Woof 🐕</h1>
       <div className='w-[370px] min-h-[300px] rounded-lg overflow-hidden flex justify-center items-center'>
         {data && !loading ? (
           <video
@@ -37,18 +37,18 @@ const Home: NextPage = () => {
           <span className='text-white text-2xl font-bold'>Loading...</span>
         )}
       </div>
-      <div className='space-x-8 mt-10'>
+      <div className='space-x-20 mt-10'>
         <button
-          className='bg-white p-3 px-16 text-black rounded-md'
+          className='bg-yellow-200 p-4 text-5xl text-black rounded-full hover:bg-yellow-300 focus:bg-yellow-400 focus:scale-110'
           onClick={newDog}
         >
-          New Dog!
+          🐶
         </button>
         <button
-          className='bg-blue-500 p-3 px-16 text-white rounded-md'
+          className='bg-red-300 p-4 text-5xl text-black rounded-full hover:bg-red-400 focus:bg-red-500 focus:scale-110'
           onClick={toggleLiked}
         >
-          {data?.isLiked ? 'UnLike' : 'Like'}
+          {data?.isLiked ? '❤️' : '🤍'}
         </button>
       </div>
     </div>
