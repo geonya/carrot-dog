@@ -26,7 +26,13 @@ const Home: NextPage = () => {
       <h1 className='text-white text-4xl mb-5 font-bold'>Geony's Dog House</h1>
       <div className='w-[370px] min-h-[300px] rounded-lg overflow-hidden flex justify-center items-center'>
         {data && !loading ? (
-          <video src={data.url} autoPlay loop className='w-[100%]' />
+          <video
+            src={data.url}
+            autoPlay
+            loop
+            playsInline
+            className='w-[100%]'
+          />
         ) : (
           <span className='text-white text-2xl font-bold'>Loading...</span>
         )}
